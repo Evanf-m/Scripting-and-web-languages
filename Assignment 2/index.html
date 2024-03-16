@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ping Pong Game</title>
+<!-- Add the Bootstrap CSS file -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<!-- Add the Bootstrap JavaScript file -->
+<link rel="javaScript" href="java/javaScript.js">
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the PING PONG GAME!</h1>
+  <canvas id="canvas" width="1000" height="500"></canvas>
+  <p id = "p1" class="leftGoal"></p>
+  <p id = "p2" class="rightGoal"></p>
+</div>
+<p class="para">Press the START Button to start the game with 2 players OR the BOT Button to start the game with a bot on the right side</p>
+<p class="para">Press the RESET Button to restart the game to choose other options. 20 points wins!</p>
+<div class="button">
+  <button id="start-btn" class="btn">START</button>
+    <button id="pause-btn" class="btn">PAUSE</button>
+    <button id="restart-btn" class="btn">RESTART</button>
+</div>
+<div class="button">
+  <button id="ai-btn1" class="btn">BOT LEVEL (EASY)</button>
+  <button id="ai-btn2" class="btn">BOT LEVEL (HARD)</button>
+</div>
+  <p class="control">Control: Player Left(W and S) | Player Right(arrow up and arrow down)</p>
+  <!-- Add a modal element with an ID -->
+<div class="modal" tabindex="-1" role="dialog" id="message-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 id="message"></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="message-modal-close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="java/javaScript.js"></script>
+</body>
+</html>
